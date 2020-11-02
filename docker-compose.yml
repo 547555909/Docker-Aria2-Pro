@@ -13,6 +13,7 @@ services:
       - IPV6_MODE=false
       - UPDATE_TRACKERS=true
       - TZ=Asia/Shanghai
+      - SPECIAL_MODE=rclone
     volumes:
       - ${PWD}/aria2-config:/config
       - ${PWD}/aria2-downloads:/downloads
