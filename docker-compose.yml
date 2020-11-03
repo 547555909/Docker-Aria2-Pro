@@ -49,7 +49,7 @@ services:
     image: p3terx/tele-aria2
     network_mode: host
     volumes:
-    - ~/.tele-aria2-conf.json:/config.json
+    - ${PWD}/.tele-aria2-conf.json:/config.json
     restart: unless-stopped
     logging:
       driver: json-file
